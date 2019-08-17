@@ -108,6 +108,7 @@ footer {
   background: #666666;
   border-top: 8px solid #4aaaa5;
   height: 50px;
+  width: 100%
 }
 
 h3, h2 {
@@ -219,10 +220,28 @@ input[type=submit] {
 
 @media screen and (max-width: 980px) {
         .main-section{
+          position: relative;
           margin: 0 5% 300px 5%;
+          max-width: 888px;
         }
+
+        nav {
+          position: relative;
+           right: 50px;
+      
+       }
 }
 @media screen and (max-width: 768px) {
+
+ nav {
+    position: relative;
+     right: 50px;
+
+ }
+
+ .main-section {
+   max-width: 680px;
+ }
 
 }
 @media screen and (max-width: 640px) {
@@ -249,4 +268,14 @@ input[type=submit] {
       max-width: 580px;
       margin: 35px 1% 0 1%;
     }
+
+    .auth-image {
+      position: relative;
+      left: 25%;
+    }
+
+    .main-section p{
+      clear: both;
+    }
+    
 }
